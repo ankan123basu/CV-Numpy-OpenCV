@@ -1,0 +1,44 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*.so
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+.Python
+
+# VS Code project files
+.vscode/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
+*.bak
+
+# Python packaging files
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Test and coverage reports
+htmlcov/
+.tox/
+.nox/
+coverage.*
+.cache
+.pytest_cache/
+
+# Jupyter runtime files
+*.nbconvert.ipynb
