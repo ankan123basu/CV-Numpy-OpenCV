@@ -1,0 +1,96 @@
+each single didgit image can be represented as an array
+
+how dark a pixel should be can be represented as a value bewtween 0(darkest) and 1(whitest)
+
+often the default images have values between 0(darkest) and 255(brightest)
+
+the range 0 to 255 has to do with how comp store 8 bit numbers
+
+but we can always divide all the values  by 255 to normalize to between 0 and 1
+
+Color images can be represented as a combination of R, G, be
+
+r g b allows to produce a range of colors
+
+each color channel will have intensity values
+
+Shape of color array has 3 dimensions :
+1) Height 
+2) width
+3) Color Channels
+
+E.g (1280,720,3)
+1280 pixel height
+720 pixel width
+3 color channels
+
+the user needs to dictate which channel is for which color
+
+each channel alone is essentially the same as a grayscale image
+
+
+
+More detailed by chatgpt :
+
+🖼️ How Images Are Represented in Arrays
+
+✅ 1. Grayscale Images
+Each pixel has one value: how dark or light the pixel is.
+
+Common range:
+
+0 = black (darkest)
+
+255 = white (brightest)
+
+In normalized form (common in ML models):
+
+Values are scaled to [0.0, 1.0] by dividing by 255.
+
+Shape: (height, width) — e.g., (28, 28) for MNIST digits.
+
+✅ 2. Color Images (RGB)
+
+Represented using 3 channels: Red, Green, and Blue.
+
+Each pixel has three values: one for R, G, and B respectively.
+
+Intensity of each channel determines the final color.
+
+Shape of array:
+(height, width, channels)
+e.g. (720, 1280, 3)
+Example:
+
+Pixel = [255, 0, 0] → pure red
+
+Pixel = [0, 255, 0] → pure green
+
+Pixel = [0, 0, 255] → pure blue
+
+Pixel = [255, 255, 255] → white
+
+Pixel = [0, 0, 0] → black
+
+✅ 3. Normalization
+Why normalize to [0,1]?
+
+Makes computations stable and models learn faster.
+
+Standard in ML/Deep Learning libraries (e.g., PyTorch, TensorFlow).
+
+normalized_img = img_array / 255.0
+Each channel is now floating-point values between 0.0 and 1.0.
+
+✅ 4. Each Channel = Grayscale Image
+If you isolate one channel:
+
+red_channel = img[:, :, 0]
+it becomes a 2D array just like a grayscale image.
+
+Visualizing the red channel with cmap='gray' shows how much red is present pixel-wise.
+
+
+
+
+
