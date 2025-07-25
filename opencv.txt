@@ -1,0 +1,2 @@
+OpenCV (Open Source Computer Vision) is a lib of programming functions mainly aimed at real time computer Vision
+
