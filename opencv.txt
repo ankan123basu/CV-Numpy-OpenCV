@@ -1,2 +1,3 @@
 OpenCV (Open Source Computer Vision) is a lib of programming functions mainly aimed at real time computer Vision
 
+It contains many popular algo for computer vision like object detection and tracking algos built-n
