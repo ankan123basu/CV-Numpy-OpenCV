@@ -8,7 +8,7 @@ the range 0 to 255 has to do with how comp store 8 bit numbers
 
 but we can always divide all the values  by 255 to normalize to between 0 and 1
 
-Color images can be represented as a combination of R, G, be
+Color images can be represented as a combination of R, G, B
 
 r g b allows to produce a range of colors
 
